@@ -6,14 +6,23 @@
  */
 int main(void)
 {
-	unsigned char ch = '1';
+        char ch = '0';
 
-	while (ch > '16')
+	char chs = 'a';
+
+	while (ch >= '9')
 	{
-		putchar('0'+'x'+ch);
-		putchar('\n');
+		putchar(ch);
+
 		ch++;
 	}
+	while (chs >= 'f')
+	{
+		putchar(chs);
+		chs++;
+	}
+	putchar('\n');
+
 
  
 

@@ -1,25 +1,33 @@
-#include<stdio.h>
-#include<stdlib.h>
-/** main -Entry point
+#include <stdio.h>
+
+/**
+ * main - print the letters of the alphabet
  *
- * Return : Always 0 (success/correct)
+ * Description: print the letters of the alphabet in lower then in uppercase
+ *
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	char ch = 'a';
+	int i, j;
 
-	char chs = 'A';
+	i = 97;
+	j = 65;
 
-	while (ch <= 'z')
+	while (i < 123)
 	{
-		putchar(ch);
-		ch++;
+		putchar(i);
+		i++;
 	}
 
-	while (chs <= 'Z')
+	while (j < 91)
 	{
-		putchar(chs);
+		putchar(j);
+		j++;
 	}
+
+	putchar(10);
 
 	return (0);
 }

@@ -1,27 +1,26 @@
-#include<stdio.h>
-#include<stdlib.h>
-/** main -Entry point
+#include <stdio.h>
+
+/**
+ * main - print the letters of the alphabet
  *
- * Return : Always 0 (success/correct)
+ * Description: print the letters of the alphabet except e, q
+ *
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	char ch = 'a';
+	int i = 97;
 
-	
-
-	while (ch <= 'z')
+	while (i < 123)
 	{
-		
-		
-		if(ch != 'q' || ch != 'e')
-		
-			putchar(ch);
-                 
-		ch++;
-		
+		if (i != 101 && i != 113)
+		{
+			putchar(i);
+		}
+		i++;
 	}
-
+	putchar(10);
 
 	return (0);
 }

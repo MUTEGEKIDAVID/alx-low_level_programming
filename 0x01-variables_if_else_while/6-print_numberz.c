@@ -1,15 +1,28 @@
-#include<stdio.h>
-#include<stdlib.h>
-/** main -Entry point
+#include <stdio.h>
+
+/**
+ * main - print single digit numbers
  *
- * Return : Always 0 (success/correct)
+ * Description: print single digit numbers
+ *
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	putchar('0'+'1'+'2'+'3'+'4'+'5');
-	putchar('6'+'7'+'8'+'9');
+	int i;
 
-        return (0);
+	i = 48;
+
+	while (i < 58)
+	{
+		putchar(i);
+		i++;
+	}
+
+	putchar(10);
+
+	return (0);
 }
 
 
